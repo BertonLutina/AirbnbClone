@@ -1,0 +1,48 @@
+.banner{
+    background: url('https://greenweddingshoes.com/wp-content/uploads/2020/08/Villa-Kuro.jpg') center center;
+    height: min-content;
+    position: relative;
+}
+.banner_info{
+    color: white;
+    background: black;
+    padding-top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    width: 300px;
+}
+
+.banner_info > button {
+    background: #ff7779;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: inherit;
+}
+
+.banner_info > button:hover {
+    background: black;
+    color: #ff7779;
+    border:#ff7779 1px solid;
+}
+.banner_info > h5{
+    margin-top: 10px;
+}
+
+.banner_search{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_search > button{
+    border: 1px solid #ff77799f;
+    background: rgba(255, 255, 255, 0.932);
+    color:#ff7779;
+    text-transform: inherit;
+}
+
+.banner_search > button:hover{
+    background: #ff7779;
+    color:white;
+}

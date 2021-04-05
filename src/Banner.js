@@ -1,0 +1,35 @@
+import  Button from '@material-ui/core/Button'
+import React,{useState} from 'react'
+import { useHistory } from 'react-router';
+import './Banner.css'
+import Search from './Search';
+
+const Banner = () => {
+    const history = useHistory();
+    const[showSearch, setShowPicker] = useState(false);
+    return (
+        <div className="banner">
+            <div className="banner_search">
+                {showSearch && <Search/>}
+                <Button className="banner_searchButton"
+                    variant="outlined" onClick={() => setShowPicker(!showSearch)}>
+                         {showSearch ? "Hide dates" : "Search dates" }
+                </Button>
+            </div>
+            <div className="banner_info">
+                <h1>
+                    Get out and stretch your imagination
+                </h1>
+                <h5>
+                    Plan a differen kind of getaway 
+                    to uncover the hidden gems near you.
+                </h5>
+                <Button  variant="outlined" onClick={() => history.push('/search')}>
+                    Explore
+                </Button>
+            </div>
+        </div>
+    )
+}
+
+export default Banner
